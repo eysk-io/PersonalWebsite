@@ -39,7 +39,6 @@ const Header = ({ projects }) => {
                                     </NavDropdown.Item>
                                 ))}
                             </NavDropdown >
-                            <Nav.Link>Blog</Nav.Link>
                         </Nav>
                     </Container>
                 </Navbar>

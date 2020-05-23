@@ -5,28 +5,28 @@ import firstResponseImg from './FirstResponse.png'
 
 const projects = [
     {
-        name: "Access Campus",
+        name: "access campus",
         img: accessCampusImg,
         url: "https://www.access-campus.app/",
-        desc: "access campus description"
+        desc: "wheelchair accessible entrances to buildings on university of company campuses"
     },
     {
-        name: "Pack Frenzy",
+        name: "pack frenzy",
         img: packFrenzyImg,
         url: "https://play.google.com/store/apps/details?id=moc.funapp.packathon",
-        desc: "pack frenzy description"
+        desc: "multiplayer android application to play with up to four players"
     },
     {
-        name: "YANA",
+        name: "yana",
         img: yanaImg,
         url: "https://devpost.com/software/yana-you-are-not-alone",
-        desc: "yana description"
+        desc: "ai-enabled chatbot companion created in response to the overdose crisis in Canada"
     },
     {
-        name: "First Response",
+        name: "first response",
         img: firstResponseImg,
         url: "https://github.com/eyskim/First_Response/",
-        desc: "first response description"
+        desc: "holistic first response system created for the city of kelowna"
     },
 ];
 

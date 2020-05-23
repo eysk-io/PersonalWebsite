@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
 import styled from 'styled-components';
 
 const Styles = styled.div`
