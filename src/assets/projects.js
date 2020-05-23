@@ -1,7 +1,7 @@
-import accessCampusImg from './AccessCampus.png'
-import packFrenzyImg from './PackFrenzy.png'
-import yanaImg from './Yana.png'
-import firstResponseImg from './FirstResponse.png'
+import accessCampusImg from './AccessCampus.png';
+import packFrenzyImg from './PackFrenzy.png';
+import yanaImg from './Yana.png';
+import firstResponseImg from './FirstResponse.png';
 
 const projects = [
     {
