@@ -2,6 +2,8 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Grid from '@material-ui/core/Grid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub, faGitlab } from '@fortawesome/free-brands-svg-icons';
 import styled from 'styled-components';
 import background from '../../assets/wood.jpg';
 import profile from '../../assets/ProfilePic.jpg'
@@ -16,11 +18,39 @@ const Styles = styled.div`
     #avatar {
         background-image: url(${profile});
         background-size: cover;
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
         border: black solid 3px;
         border-radius: 50%;
         display: block;
+    }
+
+    #bio {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+        max-width: 400px;
+        margin-top: 35px;
+        margin-bottom: 45px;
+        border-bottom: black 1px solid;
+        padding-bottom: 35px;
+    }
+
+    .social-media {
+        margin: 10px;
+    }
+
+    #linkedin {
+        color: #0e76a8;
+    }
+
+    #github {
+        color: #6e5494;
+    }
+
+    #gitlab {
+        color: #fa7035;
     }
 `;
 
@@ -35,9 +65,23 @@ const Title = () => (
                             <div id="avatar"></div>
                         </Grid>
                         <Grid item xs={12}>
-                            <h1>
-                                Hi
-                            </h1>
+                            <div id="bio">
+                                I like machine learning, data visualization and backend development
+                            </div>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <a href="https://linkedin.com/in/eykim195/" target="_blank">
+                                <FontAwesomeIcon href="" className="social-media" size={"3x"} id="linkedin" icon={faLinkedin} />
+                            </a>
+                            <a href="https://github.com/eyskim" target="_blank">
+                                <FontAwesomeIcon className="social-media" size={"3x"} id="github" icon={faGithub} />
+                            </a>
+                            <a href="https://gitlab.com/eyskim" target="_blank">
+                                <FontAwesomeIcon href="" className="social-media" size={"3x"} id="gitlab" icon={faGitlab} />
+                            </a>
+                        </Grid>
+                        <Grid item xs={6}>
+
                         </Grid>
                     </Grid>
                 </Container>
