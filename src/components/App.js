@@ -10,7 +10,7 @@ import ProjectPanels from './project-panels/ProjectPanels';
 const App = () => {
     return (
         <div className="root">
-            <Header projects={projects} />
+            <Header />
             <Jumbotron />
             <Layout>
                 <ProjectPanels projects={projects} />

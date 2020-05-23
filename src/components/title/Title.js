@@ -14,7 +14,7 @@ const Styles = styled.div`
     .jumbotron {
         background: url(${background}) no-repeat fixed;
         background-size: cover;
-        min-height: 900px;
+        min-height: 1000px;
         height: 100vh;
         position: relative;
     }
@@ -59,40 +59,54 @@ const Styles = styled.div`
     }
 `;
 
-const Title = () => (
-    <Styles>
-        <div className="title">
-            <Jumbotron fluid className="jumbotron">
-                <div className="overlay"></div>
-                <Container>
-                    <Grid container align={"center"}>
-                        <Grid item xs={12}>
-                            <div id="avatar"></div>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <div id="bio">
-                                I like machine learning, data visualization and backend development
+const Title = () => {
+    function onClickProjects(e) {
+        e && e.preventDefault();
+        const element = document.getElementById("project-panel");
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+
+    return (
+        <Styles>
+            <div className="title">
+                <Jumbotron fluid className="jumbotron">
+                    <div className="overlay"></div>
+                    <Container>
+                        <Grid container align={"center"}>
+                            <Grid item xs={12}>
+                                <div id="avatar"></div>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div id="bio">
+                                    I like machine learning, data visualization and backend development
                             </div>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <a href="https://linkedin.com/in/eykim195/" target="_blank">
+                                    <FontAwesomeIcon href="" className="social-media" size={"3x"} id="linkedin" icon={faLinkedin} />
+                                </a>
+                                <a href="https://github.com/eyskim" target="_blank">
+                                    <FontAwesomeIcon className="social-media" size={"3x"} id="github" icon={faGithub} />
+                                </a>
+                                <a href="https://gitlab.com/eyskim" target="_blank">
+                                    <FontAwesomeIcon href="" className="social-media" size={"3x"} id="gitlab" icon={faGitlab} />
+                                </a>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <a href="#" style={{ color: "#000" }}>
+                                    <FontAwesomeIcon
+                                        style={{ marginBottom: "30px" }}
+                                        icon={faChevronDown} size={"3x"}
+                                        onClick={onClickProjects.bind(this)}
+                                    />
+                                </a>
+                            </Grid>
                         </Grid>
-                        <Grid item xs={12}>
-                            <a href="https://linkedin.com/in/eykim195/" target="_blank">
-                                <FontAwesomeIcon href="" className="social-media" size={"3x"} id="linkedin" icon={faLinkedin} />
-                            </a>
-                            <a href="https://github.com/eyskim" target="_blank">
-                                <FontAwesomeIcon className="social-media" size={"3x"} id="github" icon={faGithub} />
-                            </a>
-                            <a href="https://gitlab.com/eyskim" target="_blank">
-                                <FontAwesomeIcon href="" className="social-media" size={"3x"} id="gitlab" icon={faGitlab} />
-                            </a>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <FontAwesomeIcon style={{ marginBottom: "30px" }} icon={faChevronDown} size={"3x"} />
-                        </Grid>
-                    </Grid>
-                </Container>
-            </Jumbotron>
-        </div>
-    </Styles>
-);
+                    </Container>
+                </Jumbotron>
+            </div>
+        </Styles>
+    )
+};
 
 export default Title;

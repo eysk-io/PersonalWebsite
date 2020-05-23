@@ -19,7 +19,13 @@ const Styles = styled.div`
     }
 `;
 
-const Header = ({ projects }) => {
+const Header = () => {
+    function onClickProjects(e) {
+        e && e.preventDefault();
+        const element = document.getElementById("project-panel");
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+
     return (
         <header>
             <Styles>
@@ -30,16 +36,13 @@ const Header = ({ projects }) => {
                             Eric Y. Kim
                         </Navbar.Brand>
                         <Nav>
-                            <NavDropdown
-                                title="Projects"
+                            <Nav.Link
+                                onClick={onClickProjects.bind(this)}
                             >
-                                {projects.map((project, index) => (
-                                    <NavDropdown.Item href={project.url} target={"_blank"} key={index} >
-                                        {project.name}
-                                    </NavDropdown.Item>
-                                ))}
-                            </NavDropdown >
+                                Projects
+                            </Nav.Link>
                         </Nav>
+
                     </Container>
                 </Navbar>
             </Styles>

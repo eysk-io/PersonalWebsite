@@ -3,7 +3,7 @@ import Project from '../project/Project';
 
 const ProjectPanels = ({ projects }) => {
     return (
-        <div className="project-panel">
+        <div id="project-panel" className="project-panel" style={{ paddingTop: "100px" }}>
             {
                 projects.map((project, index) => (
                     <Project
