@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "1.x"
-  }
+  },
   "description": "",
   "main": "App.js",
   "scripts": {
