@@ -12,7 +12,7 @@ import profile from '../../assets/ProfilePic.jpg'
 
 const Styles = styled.div`
     .jumbotron {
-        background: url(${background}) no-repeat fixed bottom;
+        background: url(${background}) no-repeat fixed;
         background-size: cover;
         min-height: 900px;
         height: 100vh;
@@ -43,7 +43,7 @@ const Styles = styled.div`
 
     .social-media {
         margin: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 100px;
     }
 
     #linkedin {
