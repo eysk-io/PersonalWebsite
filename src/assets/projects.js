@@ -17,16 +17,16 @@ const projects = [
         desc: "multiplayer android application to play with up to four players"
     },
     {
-        name: "yana",
-        img: yanaImg,
-        url: "https://devpost.com/software/yana-you-are-not-alone",
-        desc: "ai-enabled chatbot companion created in response to the overdose crisis in Canada"
-    },
-    {
         name: "first response",
         img: firstResponseImg,
         url: "https://github.com/eyskim/First_Response/",
         desc: "holistic first response system created for the city of kelowna"
+    },
+    {
+        name: "yana",
+        img: yanaImg,
+        url: "https://devpost.com/software/yana-you-are-not-alone",
+        desc: "ai-enabled chatbot companion created in response to the overdose crisis in Canada"
     },
 ];
 
