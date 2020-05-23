@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faGitlab } from '@fortawesome/free-brands-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-
 import styled from 'styled-components';
 import background from '../../assets/wood.jpg';
 import profile from '../../assets/ProfilePic.jpg'
