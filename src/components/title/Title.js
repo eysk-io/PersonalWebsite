@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Grid from '@material-ui/core/Grid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faGitlab } from '@fortawesome/free-brands-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 import styled from 'styled-components';
 import background from '../../assets/wood.jpg';
 import profile from '../../assets/ProfilePic.jpg'
@@ -12,10 +14,12 @@ const Styles = styled.div`
     .jumbotron {
         background: url(${background}) no-repeat fixed bottom;
         background-size: cover;
-        height: 700px;
+        min-height: 900px;
+        height: 100vh;
         position: relative;
     }
     #avatar {
+        margin-top: 100px;
         background-image: url(${profile});
         background-size: cover;
         height: 250px;
@@ -31,7 +35,7 @@ const Styles = styled.div`
         line-height: 1.5;
         font-family: "Open Sans", sans-serif;
         max-width: 400px;
-        margin-top: 35px;
+        margin-top: 60px;
         margin-bottom: 45px;
         border-bottom: black 1px solid;
         padding-bottom: 35px;
@@ -39,6 +43,7 @@ const Styles = styled.div`
 
     .social-media {
         margin: 10px;
+        margin-bottom: 40px;
     }
 
     #linkedin {
@@ -80,8 +85,8 @@ const Title = () => (
                                 <FontAwesomeIcon href="" className="social-media" size={"3x"} id="gitlab" icon={faGitlab} />
                             </a>
                         </Grid>
-                        <Grid item xs={6}>
-
+                        <Grid item xs={12}>
+                            <FontAwesomeIcon style={{ marginBottom: "30px" }} icon={faChevronDown} size={"3x"} />
                         </Grid>
                     </Grid>
                 </Container>

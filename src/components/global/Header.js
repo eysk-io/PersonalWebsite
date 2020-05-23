@@ -23,7 +23,7 @@ const Header = ({ projects }) => {
     return (
         <header>
             <Styles>
-                <Navbar bg="dark" variant="dark">
+                <Navbar fixed="top" bg="dark" variant="dark">
                     <Container>
                         <Navbar.Brand href="/">
                             <FontAwesomeIcon icon={faLaptopCode} style={{ marginRight: 10 }} />
