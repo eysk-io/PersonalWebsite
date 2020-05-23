@@ -5,6 +5,7 @@ const Styles = styled.div`
     a.project-item {
         text-align: center;
         max-width: 500px;
+        height: 500px;
         margin: 40px;
         border-radius: 3px;
         -moz-transition: all 0.3s ease;
@@ -28,7 +29,8 @@ const Styles = styled.div`
     }
 
     .project-img img {
-        max-width: 100%;
+        max-width: 500px;
+        max-height: 500px;
         border-radius: 3px;
         overflow: hidden;
         overflow-x: hidden;

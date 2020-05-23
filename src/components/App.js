@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import projects from '../assets/projects';
-import { Header } from './global/index';
+import { Header, Footer } from './global/index';
 import Layout from './layout/Layout';
 import Jumbotron from './title/Title';
 import ProjectPanels from './project-panels/ProjectPanels';
@@ -15,6 +15,7 @@ const App = () => {
             <Layout>
                 <ProjectPanels projects={projects} />
             </Layout>
+            <Footer />
         </div >
     );
 };
