@@ -1,8 +1,7 @@
 import React from 'react';
 import Project from '../project/Project';
-import projects from '../../assets/projects';
 
-const ProjectPanels = () => {
+const ProjectPanels = ({ projects }) => {
     return (
         <div className="project-panel">
             {
@@ -11,6 +10,7 @@ const ProjectPanels = () => {
                         name={project.name}
                         img={project.img}
                         url={project.url}
+                        desc={project.desc}
                         key={index}
                     />
                 ))

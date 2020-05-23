@@ -6,7 +6,6 @@ import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import projects from '../../assets/projects';
 
 const Styles = styled.div`
     .navbar {
@@ -20,7 +19,7 @@ const Styles = styled.div`
     }
 `;
 
-const Header = () => {
+const Header = ({ projects }) => {
     return (
         <header>
             <Styles>
