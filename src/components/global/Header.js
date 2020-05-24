@@ -20,10 +20,23 @@ const Styles = styled.div`
 `;
 
 const Header = () => {
+    function onClickHome(e) {
+        e && e.preventDefault();
+        scrollToTop();
+    }
+
+    function scrollToTop() {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, c - c / 8);
+        }
+    };
+
     function onClickProjects(e) {
         e && e.preventDefault();
         const element = document.getElementById("project-panel");
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ top: 0, behavior: "smooth" });
     }
 
     return (
@@ -31,7 +44,7 @@ const Header = () => {
             <Styles>
                 <Navbar fixed="top" bg="dark" variant="dark">
                     <Container>
-                        <Navbar.Brand href="/">
+                        <Navbar.Brand href="/" onClick={onClickHome.bind(this)}>
                             <FontAwesomeIcon icon={faLaptopCode} style={{ marginRight: 10 }} />
                             Eric Y. Kim
                         </Navbar.Brand>

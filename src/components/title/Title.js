@@ -67,7 +67,7 @@ const Title = () => {
 
     return (
         <Styles>
-            <div className="title">
+            <div id="title" className="title">
                 <Jumbotron fluid className="jumbotron">
                     <div className="overlay"></div>
                     <Container>
