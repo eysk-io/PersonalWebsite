@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -46,13 +45,13 @@ const Header = () => {
                     <Container>
                         <Navbar.Brand href="/" onClick={onClickHome.bind(this)}>
                             <FontAwesomeIcon icon={faLaptopCode} style={{ marginRight: 10 }} />
-                            Eric Y. Kim
+                            eric y. kim
                         </Navbar.Brand>
                         <Nav>
                             <Nav.Link
                                 onClick={onClickProjects.bind(this)}
                             >
-                                Projects
+                                projects
                             </Nav.Link>
                         </Nav>
 
