@@ -1,7 +1,7 @@
 import React from 'react';
 import PortfolioItems from '../portfolio-items/PortfolioItems';
-import RightButton from '../switch-buttons/RightButton';
-import LeftButton from '../switch-buttons/LeftButton';
+import { LeftButton, RightButton } from '../switch-buttons/SwitchButtons.index';
+import PortfolioStyles from './Portfolio.styles';
 import Grid from '@material-ui/core/Grid';
 
 const Portfolio = ({ projects }) => {
@@ -14,23 +14,25 @@ const Portfolio = ({ projects }) => {
     function gridRatio(component) {
         console.log(component.type.name);
         return (
-            component.type.name === "PortfolioItems" ? 6 : 3
+            component.type.name === "PortfolioItems" ? 8 : 2
         );
     }
 
     return (
-        <div className="portfolio">
-            <Grid container>
-                {
-                    components.map((component, index) => (
-                        <Grid item key={index} xs={gridRatio(component)}>
-                            {component}
-                        </Grid>
-                    ))
-                }
-            </Grid>
-        </div>
-    )
+        <PortfolioStyles>
+            <div className="portfolio">
+                <Grid container>
+                    {
+                        components.map((component, index) => (
+                            <Grid className={component.type.name} item key={index} xs={gridRatio(component)}>
+                                {component}
+                            </Grid>
+                        ))
+                    }
+                </Grid>
+            </div>
+        </PortfolioStyles>
+    );
 }
 
 export default Portfolio;

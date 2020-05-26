@@ -1,4 +1,4 @@
-import RightButton from './RightButton';
-import LeftButton from './LeftButton';
+import RightButton from './right-button/RightButton';
+import LeftButton from './left-button/LeftButton';
 
 export { RightButton, LeftButton }
