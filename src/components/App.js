@@ -9,7 +9,7 @@ import Portfolio from './portfolio/Portfolio';
 
 const AppStyle = styled.div`
     a :hover {
-        transform: translateY(-3px);
+        /* transform: translateY(-3px); */
     }
 `;
 

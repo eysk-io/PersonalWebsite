@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PortfolioTitle from '../portfolio-title/PortfolioTitle';
 import PortfolioItems from '../portfolio-items/PortfolioItems';
 import { LeftButton, RightButton } from '../switch-buttons/SwitchButtons.index';
 import PortfolioStyles from './Portfolio.styles';
 import Grid from '@material-ui/core/Grid';
 
 const Portfolio = ({ projects }) => {
+    const [title, setTitle] = useState("Projects");
+
     const components = [
         <LeftButton />,
         <PortfolioItems projects={projects} />,
@@ -21,7 +24,8 @@ const Portfolio = ({ projects }) => {
     return (
         <PortfolioStyles>
             <div className="portfolio">
-                <Grid container>
+                <PortfolioTitle title={title} />
+                < Grid container>
                     {
                         components.map((component, index) => (
                             <Grid className={component.type.name} item key={index} xs={gridRatio(component)}>
