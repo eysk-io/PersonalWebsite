@@ -1,15 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import PortfolioItemsStyles from './PortfolioItems.styles';
 import Project from '../project/Project';
-
-const PortfolioItemsStyles = styled.div`
-    .portfolio-items {
-        margin: auto;
-        height: 100vh;
-        overflow-y: scroll;
-        width: 75%;
-    }
-`;
 
 const PortfolioItems = ({ projects }) => {
     return (
