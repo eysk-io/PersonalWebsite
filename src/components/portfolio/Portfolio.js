@@ -12,7 +12,7 @@ const Portfolio = ({ projects }) => {
 
     const components = [
         <LeftButton onButtonClick={onButtonClick} />,
-        <PortfolioItems projects={projects} />,
+        <PortfolioItems projects={projects} title={title} />,
         <RightButton />
     ];
 
