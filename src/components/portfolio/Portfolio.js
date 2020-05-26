@@ -24,7 +24,6 @@ const Portfolio = ({ projects }) => {
 
     function calculateTitlesIndex(clickNumber, e) {
         e.target.dataset.icon === "chevron-circle-left" ? clickNumber-- : clickNumber++;
-        console.log(clickNumber);
         return Math.abs(clickNumber % titles.length);
     }
 
