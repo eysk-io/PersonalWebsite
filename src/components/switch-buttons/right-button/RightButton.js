@@ -1,11 +1,15 @@
 import React from 'react';
+import RightButtonStyles from './RightButton.styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 const RightButton = () => {
     return (
-        <div className="right-button">
-            <h1>RightButton</h1>
-        </div>
-
+        <RightButtonStyles>
+            <div className="right-button">
+                <FontAwesomeIcon icon={faChevronCircleRight} size={"2x"} />
+            </div>
+        </RightButtonStyles>
     );
 }
 
