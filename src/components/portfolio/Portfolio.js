@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../project/Project';
 
-const ProjectPanels = ({ projects }) => {
+const Portfolio = ({ projects }) => {
     return (
         <div id="project-panel" className="project-panel" style={{ paddingTop: "100px" }}>
             {
@@ -19,4 +19,4 @@ const ProjectPanels = ({ projects }) => {
     )
 }
 
-export default ProjectPanels;
+export default Portfolio;

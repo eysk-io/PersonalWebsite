@@ -4,9 +4,8 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import styled from 'styled-components';
 import projects from '../assets/projects';
 import { Header, Footer } from './global/index';
-import Layout from './layout/Layout';
 import Jumbotron from './title/Title';
-import ProjectPanels from './project-panels/ProjectPanels';
+import Portfolio from './portfolio/Portfolio';
 
 const AppStyle = styled.div`
     a :hover {
@@ -20,9 +19,7 @@ const App = () => {
             <div className="root">
                 <Header />
                 <Jumbotron />
-                <Layout>
-                    <ProjectPanels projects={projects} />
-                </Layout>
+                <Portfolio projects={projects} />
                 <Footer />
             </div >
         </AppStyle>
