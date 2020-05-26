@@ -6,16 +6,30 @@ import PortfolioStyles from './Portfolio.styles';
 import Grid from '@material-ui/core/Grid';
 
 const Portfolio = ({ projects }) => {
+    const titles = ["Projects", "Dev Experience"];
+    const [clickNumber, setClickNumber] = useState(1);
     const [title, setTitle] = useState("Projects");
 
     const components = [
-        <LeftButton />,
+        <LeftButton onButtonClick={onButtonClick} />,
         <PortfolioItems projects={projects} />,
         <RightButton />
-    ]
+    ];
+
+    function onButtonClick(e) {
+        e.preventDefault();
+        setClickNumber(calculateTitlesIndex(clickNumber));
+        console.log(clickNumber);
+        setTitle(titles[clickNumber]);
+        console.log(title);
+    }
+
+    function calculateTitlesIndex(clickNumber) {
+        clickNumber++;
+        return clickNumber % titles.length;
+    }
 
     function gridRatio(component) {
-        console.log(component.type.name);
         return (
             component.type.name === "PortfolioItems" ? 8 : 2
         );
