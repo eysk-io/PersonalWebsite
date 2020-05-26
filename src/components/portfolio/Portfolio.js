@@ -11,12 +11,19 @@ const Portfolio = ({ projects }) => {
         <RightButton />
     ]
 
+    function gridRatio(component) {
+        console.log(component.type.name);
+        return (
+            component.type.name === "PortfolioItems" ? 6 : 3
+        );
+    }
+
     return (
         <div className="portfolio">
             <Grid container>
                 {
                     components.map((component, index) => (
-                        <Grid item key={index} xs={4}>
+                        <Grid item key={index} xs={gridRatio(component)}>
                             {component}
                         </Grid>
                     ))
