@@ -5,14 +5,14 @@ import { LeftButton, RightButton } from '../switch-buttons/SwitchButtons.index';
 import PortfolioStyles from './Portfolio.styles';
 import Grid from '@material-ui/core/Grid';
 
-const Portfolio = ({ projects }) => {
+const Portfolio = ({ portfolio }) => {
     const titles = ["Projects", "Dev Experience", "Monkey"];
     const [clickNumber, setClickNumber] = useState(1);
     const [title, setTitle] = useState("Projects");
 
     const components = [
         <LeftButton onButtonClick={onButtonClick} />,
-        <PortfolioItems projects={projects} title={title} />,
+        <PortfolioItems portfolio={portfolio} title={title} />,
         <RightButton onButtonClick={onButtonClick} />
     ];
 

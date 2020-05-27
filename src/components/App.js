@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import styled from 'styled-components';
-import projects from '../assets/projects';
+import portfolio from '../assets/portfolio';
 import { Header, Footer } from './global/index';
 import Jumbotron from './title/Title';
 import Portfolio from './portfolio/Portfolio';
@@ -19,7 +19,7 @@ const App = () => {
             <div className="root">
                 <Header />
                 <Jumbotron />
-                <Portfolio projects={projects} />
+                <Portfolio portfolio={portfolio} />
                 <Footer />
             </div >
         </AppStyle>

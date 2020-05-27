@@ -2,12 +2,12 @@ import React from 'react';
 import PortfolioItemsStyles from './PortfolioItems.styles';
 import Project from '../project/Project';
 
-const PortfolioItems = ({ projects }) => {
+const PortfolioItems = ({ portfolio }) => {
     return (
         <PortfolioItemsStyles>
             <div id="portfolio-items" className="portfolio-items" style={{ paddingTop: "100px" }}>
                 {
-                    projects.map((project, index) => (
+                    portfolio[0].projects.map((project, index) => (
                         <Project
                             name={project.name}
                             img={project.img}
