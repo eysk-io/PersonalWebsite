@@ -6,7 +6,9 @@ import PortfolioStyles from './Portfolio.styles';
 import Grid from '@material-ui/core/Grid';
 
 const Portfolio = ({ portfolio }) => {
-    const titles = ["Projects", "Dev Experience", "Monkey"];
+    const titles = portfolio.map(item => (
+        item.name
+    ));
     const [clickNumber, setClickNumber] = useState(1);
     const [title, setTitle] = useState("Projects");
 
