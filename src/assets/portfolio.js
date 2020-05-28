@@ -5,7 +5,7 @@ import firstResponseImg from './FirstResponse.png';
 
 const portfolio = [
     {
-        name: "PROJECTS",
+        name: "PERSONAL PROJECTS",
         items: [
             {
                 name: "access campus",
@@ -20,12 +20,6 @@ const portfolio = [
                 desc: "multiplayer android application to play with up to four players"
             },
             {
-                name: "first response",
-                img: firstResponseImg,
-                url: "https://github.com/eyskim/First_Response/",
-                desc: "holistic first response system created for the city of kelowna"
-            },
-            {
                 name: "yana",
                 img: yanaImg,
                 url: "https://devpost.com/software/yana-you-are-not-alone",
@@ -33,23 +27,24 @@ const portfolio = [
             },
         ]
     },
-    // {
-    //     name: "Professional Projects",
-    //     experience: [
-    //         {
-    //             name: "pack frenzy",
-    //             img: packFrenzyImg,
-    //             url: "https://play.google.com/store/apps/details?id=moc.funapp.packathon",
-    //             desc: "multiplayer android application to play with up to four players"
-    //         },
-    //         {
-    //             name: "first response",
-    //             img: firstResponseImg,
-    //             url: "https://github.com/eyskim/First_Response/",
-    //             desc: "holistic first response system created for the city of kelowna"
-    //         },
-    //     ]
-    // }
+    {
+        name: "TECHNICAL EXPERIENCE",
+        items: [
+            {
+                name: "first response",
+                img: firstResponseImg,
+                url: "https://github.com/eyskim/First_Response/",
+                desc: "holistic first response system created for the city of kelowna"
+            },
+            {
+                name: "club row fitness",
+                img: "asdfasdf",
+                url: "https://play.google.com/store/apps/details?id=moc.funapp.packathon",
+                desc: "multiplayer android application to play with up to four players"
+            },
+
+        ]
+    }
 ];
 
 export default portfolio;

@@ -2,13 +2,13 @@ import React from 'react';
 import PortfolioItemsStyles from './PortfolioItems.styles';
 import Project from '../project/Project';
 
-const PortfolioItems = ({ portfolio }) => {
-
+const PortfolioItems = ({ experiences }) => {
+    console.log(experiences);
     return (
         <PortfolioItemsStyles>
             <div id="portfolio-items" className="portfolio-items">
                 {
-                    portfolio[0].items.map((project, index) => (
+                    experiences.map((project, index) => (
                         <Project
                             name={project.name}
                             img={project.img}
