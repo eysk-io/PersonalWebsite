@@ -8,7 +8,7 @@ const Header = () => {
     function onClickProjects(e) {
         e && e.preventDefault();
         const element = document.getElementById("portfolio");
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     return (
