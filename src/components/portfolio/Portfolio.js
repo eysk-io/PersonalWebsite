@@ -12,12 +12,6 @@ const Portfolio = ({ portfolio }) => {
     const [clickNumber, setClickNumber] = useState(1);
     const [title, setTitle] = useState("PROJECTS");
 
-    const components = [
-        // <LeftButton onButtonClick={onButtonClick} />,
-        <PortfolioItems portfolio={portfolio} title={title} />,
-        // <RightButton onButtonClick={onButtonClick} />
-    ];
-
     function onButtonClick(e) {
         e.preventDefault();
         setClickNumber(calculateTitlesIndex(clickNumber, e));
@@ -35,6 +29,12 @@ const Portfolio = ({ portfolio }) => {
         // );
         return 12;
     }
+
+    const components = [
+        // <LeftButton onButtonClick={onButtonClick} />,
+        <PortfolioItems portfolio={portfolio} title={title} />,
+        // <RightButton onButtonClick={onButtonClick} />
+    ];
 
     return (
         <PortfolioStyles>
