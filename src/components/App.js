@@ -9,9 +9,6 @@ import Portfolio from './portfolio/Portfolio';
 import background from '../assets/wood.jpg';
 
 const AppStyle = styled.div`
-    a :hover {
-        /* transform: translateY(-3px); */
-    }
     .app {
         background: url(${background}) no-repeat fixed;
         background-size: cover;

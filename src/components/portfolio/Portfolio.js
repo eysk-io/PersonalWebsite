@@ -13,9 +13,9 @@ const Portfolio = ({ portfolio }) => {
     const [title, setTitle] = useState("Projects");
 
     const components = [
-        <LeftButton onButtonClick={onButtonClick} />,
+        // <LeftButton onButtonClick={onButtonClick} />,
         <PortfolioItems portfolio={portfolio} title={title} />,
-        <RightButton onButtonClick={onButtonClick} />
+        // <RightButton onButtonClick={onButtonClick} />
     ];
 
     function onButtonClick(e) {
@@ -30,14 +30,15 @@ const Portfolio = ({ portfolio }) => {
     }
 
     function gridRatio(component) {
-        return (
-            component.type.name === "PortfolioItems" ? 8 : 2
-        );
+        // return (
+        //     component.type.name === "PortfolioItems" ? 8 : 2
+        // );
+        return 12;
     }
 
     return (
         <PortfolioStyles>
-            <div className="portfolio">
+            <div id="portfolio" className="portfolio">
                 <PortfolioTitle title={title} />
                 < Grid container>
                     {
