@@ -5,8 +5,6 @@ const PortfolioStyles = styled.div`
         text-align: center;
         padding-top: 150px;
     }
-
-
     .LeftButton {
         position: relative;
     }

@@ -5,7 +5,7 @@ import firstResponseImg from './FirstResponse.png';
 
 const portfolio = [
     {
-        name: "Personal Projects",
+        name: "PROJECTS",
         items: [
             {
                 name: "access campus",

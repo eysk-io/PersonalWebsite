@@ -10,7 +10,7 @@ const Portfolio = ({ portfolio }) => {
         item.name
     ));
     const [clickNumber, setClickNumber] = useState(1);
-    const [title, setTitle] = useState("Projects");
+    const [title, setTitle] = useState("PROJECTS");
 
     const components = [
         // <LeftButton onButtonClick={onButtonClick} />,
