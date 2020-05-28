@@ -1,63 +1,41 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-
-const Styles = styled.div`
-    .navbar {
-        background: linear-gradient(to right, #292b2c, #000000);
-    }
-    .nav-link {
-        float: right;
-    }
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
-`;
+import Grid from '@material-ui/core/Grid';
+import { HeaderStyles } from "./global-styles/global.styles";
 
 const Header = () => {
-    function onClickHome(e) {
-        e && e.preventDefault();
-        scrollToTop();
-    }
-
-    function scrollToTop() {
-        const c = document.documentElement.scrollTop || document.body.scrollTop;
-        if (c > 0) {
-            window.requestAnimationFrame(scrollToTop);
-            window.scrollTo(0, c - c / 8);
-        }
-    };
-
     function onClickProjects(e) {
         e && e.preventDefault();
-        const element = document.getElementById("project-panel");
-        element.scrollIntoView({ top: 0, behavior: "smooth" });
+        const element = document.getElementById("portfolio");
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     return (
         <header>
-            <Styles>
-                <Navbar fixed="top" bg="dark" variant="dark">
+            <HeaderStyles>
+                <Navbar fixed="top" variant="dark">
                     <Container>
-                        <Navbar.Brand href="/" onClick={onClickHome.bind(this)}>
-                            <FontAwesomeIcon icon={faLaptopCode} style={{ marginRight: 10 }} />
-                            eric y. kim
-                        </Navbar.Brand>
-                        <Nav>
-                            <Nav.Link
-                                onClick={onClickProjects.bind(this)}
-                            >
-                                projects
-                            </Nav.Link>
-                        </Nav>
-
+                        <Grid container align="center">
+                            <Grid item xs={12}>
+                                <div className="header-name">
+                                    ERIC Y. KIM
+                                </div>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <div className="header-sub">
+                                    <a href="/" onClick={onClickProjects.bind(this)}>
+                                        Projects
+                                    </a>
+                                </div>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <div className="header-sub">About</div>
+                            </Grid>
+                        </Grid>
                     </Container>
                 </Navbar>
-            </Styles>
+            </HeaderStyles>
         </header >
     );
 }

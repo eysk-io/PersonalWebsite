@@ -1,10 +1,13 @@
 import React from 'react';
+import PortfolioTitleStyles from './PortfolioTitle.styles';
 
 const PortfolioTitle = ({ title }) => {
     return (
-        <div className="portfolio-title">
-            <h1>{title}</h1>
-        </div>
+        <PortfolioTitleStyles>
+            <div id="portfolio-title" className="portfolio-title">
+                {title}
+            </div>
+        </PortfolioTitleStyles>
     );
 }
 

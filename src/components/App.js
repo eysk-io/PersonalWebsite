@@ -4,21 +4,23 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import styled from 'styled-components';
 import portfolio from '../assets/portfolio';
 import { Header, Footer } from './global/index';
-import Jumbotron from './title/Title';
+import Title from './title/Title';
 import Portfolio from './portfolio/Portfolio';
+import background from '../assets/wood.jpg';
 
 const AppStyle = styled.div`
-    a :hover {
-        /* transform: translateY(-3px); */
+    .app {
+        background: url(${background}) no-repeat fixed;
+        background-size: cover;
     }
 `;
 
 const App = () => {
     return (
         <AppStyle>
-            <div className="root">
+            <div className="app">
                 <Header />
-                <Jumbotron />
+                <Title />
                 <Portfolio portfolio={portfolio} />
                 <Footer />
             </div >
