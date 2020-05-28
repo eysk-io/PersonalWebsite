@@ -1,20 +1,16 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Grid from '@material-ui/core/Grid'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faGitlab } from '@fortawesome/free-brands-svg-icons';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import background from '../../assets/wood.jpg';
 import profile from '../../assets/ProfilePic.jpg'
 
 const Styles = styled.div`
     .jumbotron {
-        background: url(${background}) no-repeat fixed;
-        background-size: cover;
-        min-height: 1000px;
-        height: 100vh;
+        /* background: url(${background}) no-repeat fixed;
+        background-size: cover; */
+        min-height: 700px;
+        height: 30vh;
         position: relative;
     }
     #avatar {
@@ -68,41 +64,19 @@ const Title = () => {
     return (
         <Styles>
             <div id="title" className="title">
-                <Jumbotron fluid className="jumbotron">
-                    <div className="overlay"></div>
-                    <Container>
-                        <Grid container align={"center"}>
-                            <Grid item xs={12}>
-                                <div id="avatar"></div>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <div id="bio">
-                                    I like machine learning, data visualization and backend development
-                            </div>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <a href="https://linkedin.com/in/eykim195/" target="_blank">
-                                    <FontAwesomeIcon href="" className="social-media" size={"3x"} id="linkedin" icon={faLinkedin} />
-                                </a>
-                                <a href="https://github.com/eyskim" target="_blank">
-                                    <FontAwesomeIcon className="social-media" size={"3x"} id="github" icon={faGithub} />
-                                </a>
-                                <a href="https://gitlab.com/eyskim" target="_blank">
-                                    <FontAwesomeIcon href="" className="social-media" size={"3x"} id="gitlab" icon={faGitlab} />
-                                </a>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <a href="#" style={{ color: "#000" }}>
-                                    <FontAwesomeIcon
-                                        style={{ marginBottom: "30px" }}
-                                        icon={faChevronDown} size={"3x"}
-                                        onClick={onClickProjects.bind(this)}
-                                    />
-                                </a>
-                            </Grid>
+                <div className="overlay"></div>
+                <Container>
+                    <Grid container align={"center"}>
+                        <Grid item xs={12}>
+                            <div id="avatar"></div>
                         </Grid>
-                    </Container>
-                </Jumbotron>
+                        <Grid item xs={12}>
+                            <div id="bio">
+                                I like machine learning, data visualization and backend development
+                            </div>
+                        </Grid>
+                    </Grid>
+                </Container>
             </div>
         </Styles>
     )
