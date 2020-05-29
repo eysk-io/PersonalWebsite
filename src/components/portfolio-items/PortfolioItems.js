@@ -10,7 +10,7 @@ const PortfolioItems = ({ experiences, title }) => {
                 <Grid container>
                     {
                         experiences.map((item, index) => (
-                            <Grid item xs={12} xl={6}>
+                            <Grid item xs={12} lg={6}>
                                 <PortfolioItem
                                     name={item.name}
                                     img={item.img}

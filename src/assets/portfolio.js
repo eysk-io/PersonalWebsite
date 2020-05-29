@@ -18,7 +18,7 @@ const portfolio = [
                 name: "PACKING FRENZY",
                 img: packFrenzyImg,
                 url: "https://play.google.com/store/apps/details?id=moc.funapp.packathon",
-                desc: "multiplayer android application to play with up to four players"
+                desc: "multiplayer Android application to play with up to four players"
             },
             {
                 name: "YANA",

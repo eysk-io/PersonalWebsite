@@ -1,16 +1,11 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import PortfolioItemStyles from './PortfolioItem.styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const PortfolioItem = ({ name, img, url, desc, company }) => {
-    console.log(company);
     return (
         <PortfolioItemStyles>
             <div className="portfolio-item">
