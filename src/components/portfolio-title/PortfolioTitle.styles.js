@@ -37,7 +37,7 @@ const PortfolioTitleStyles = styled.div`
             letter-spacing: 4px;
             text-transform: none;
             margin: auto;
-            margin-bottom: 100px;
+            margin-bottom: 40px;
         }
     }
 `;
