@@ -33,27 +33,36 @@ const Portfolio = ({ portfolio }) => {
         return 2;
     }
 
-    const components = [
-        <LeftButton onButtonClick={onButtonClick} />,
-        <PortfolioItems experiences={experiences} title={title} />,
-        <RightButton onButtonClick={onButtonClick} />
-    ];
+    // const components = [
+    //     <LeftButton onButtonClick={onButtonClick} />,
+    //     <PortfolioItems experiences={experiences} title={title} />,
+    //     <RightButton onButtonClick={onButtonClick} />
+    // ];
 
     return (
         <PortfolioStyles>
             <div id="portfolio" className="portfolio">
                 <PortfolioTitle title={title} />
                 < Grid container>
-                    {
+                    {/* {
                         components.map((component, index) => (
                             <Grid className={component.type.name} item key={index} xs={gridRatio(component)}>
                                 {component}
                             </Grid>
                         ))
-                    }
+                    } */}
+                    <Grid className={"LeftButton"} item key={0} xs={2}>
+                        <LeftButton onButtonClick={onButtonClick} />
+                    </Grid>
+                    <Grid className={"PortfolioItems"} item key={1} xs={8}>
+                        <PortfolioItems experiences={experiences} title={title} />
+                    </Grid>
+                    <Grid className={"RigthButton"} item key={2} xs={2}>
+                        <RightButton onButtonClick={onButtonClick} />
+                    </Grid>
                 </Grid>
             </div>
-        </PortfolioStyles>
+        </PortfolioStyles >
     );
 }
 
