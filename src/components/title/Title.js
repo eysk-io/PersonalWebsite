@@ -15,7 +15,7 @@ const Title = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <div className="bio">
-                                Hello there! I'm an aspiring Software Developer in Vancouver
+                                Hello there! I'm an aspiring Software Developer and current UBC Computer Science student in Vancouver
                             </div>
                         </Grid>
                     </Grid>

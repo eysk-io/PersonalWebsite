@@ -13,6 +13,9 @@ const AppStyle = styled.div`
         background: url(${background}) no-repeat fixed;
         background-size: cover;
     }
+    a {
+        text-decoration: none;
+    }
 `;
 
 const App = () => {

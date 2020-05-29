@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import PortfolioItemsStyles from './PortfolioItems.styles';
 import PortfolioItem from '../portfolio-item/PortfolioItem';
 
-const PortfolioItems = ({ experiences }) => {
+const PortfolioItems = ({ experiences, title }) => {
     return (
         <PortfolioItemsStyles>
             <div id="portfolio-items" className="portfolio-items">
@@ -16,6 +16,7 @@ const PortfolioItems = ({ experiences }) => {
                                     img={item.img}
                                     url={item.url}
                                     desc={item.desc}
+                                    company={title === "TECHNICAL EXPERIENCE" ? item.company : null}
                                     key={index}
                                 />
                             </Grid>
