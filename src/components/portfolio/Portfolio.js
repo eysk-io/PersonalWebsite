@@ -51,13 +51,13 @@ const Portfolio = ({ portfolio }) => {
                             </Grid>
                         ))
                     } */}
-                    <Grid className={"LeftButton"} item key={0} xs={2}>
+                    <Grid item className={"LeftButton"} item key={0} xs={2}>
                         <LeftButton onButtonClick={onButtonClick} />
                     </Grid>
-                    <Grid className={"PortfolioItems"} item key={1} xs={8}>
+                    <Grid item className={"PortfolioItems"} item key={1} xs={8}>
                         <PortfolioItems experiences={experiences} title={title} />
                     </Grid>
-                    <Grid className={"RigthButton"} item key={2} xs={2}>
+                    <Grid item className={"RightButton"} item key={2} xs={2}>
                         <RightButton onButtonClick={onButtonClick} />
                     </Grid>
                 </Grid>

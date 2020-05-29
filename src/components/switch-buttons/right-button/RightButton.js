@@ -11,7 +11,7 @@ const RightButton = ({ onButtonClick }) => {
                     <FontAwesomeIcon icon={faChevronCircleRight} size={"2x"} />
                 </a>
             </div>
-        </RightButtonStyles>
+        </RightButtonStyles >
     );
 }
 
