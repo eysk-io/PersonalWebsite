@@ -5,7 +5,7 @@ const PortfolioStyles = styled.div`
         margin: auto;
         text-align: center;
         padding-top: 150px;
-        max-width: 750px;
+        max-width: 100%;
     }
     .LeftButton {
         position: relative;

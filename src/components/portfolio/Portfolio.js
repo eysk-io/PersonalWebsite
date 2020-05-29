@@ -19,6 +19,8 @@ const Portfolio = ({ portfolio }) => {
         setClickNumber(calculateTitlesIndex(clickNumber, e));
         setTitle(portfolioItems[clickNumber].name);
         setExperiences(portfolioItems[clickNumber].experience);
+        const element = document.getElementById("portfolio");
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     function calculateTitlesIndex(clickNumber, e) {
