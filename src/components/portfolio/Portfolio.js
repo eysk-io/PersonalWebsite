@@ -29,9 +29,8 @@ const Portfolio = ({ portfolio }) => {
     }
 
     function gridRatio(component) {
-        return (
-            component.type.name === "PortfolioItems" ? 8 : 2
-        );
+        if (component.type.name === "PortfolioItems") return 8;
+        return 2;
     }
 
     const components = [
