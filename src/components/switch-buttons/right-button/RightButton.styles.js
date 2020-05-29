@@ -7,7 +7,7 @@ const RightButtonStyles = styled.div`
     .right-button {
         position: absolute;
         top: 50%;
-        right: 100%;
+        right: 30%;
     }
 `;
 

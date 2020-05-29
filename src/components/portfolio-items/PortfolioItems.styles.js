@@ -5,7 +5,8 @@ const PortfolioItemsStyles = styled.div`
         margin: auto;
         height: 100vh;
         overflow-y: scroll;
-        width: 75%;
+        width: 100%;
+        max-width: 350px;
     }
 `;
 
